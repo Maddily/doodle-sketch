@@ -31,3 +31,4 @@ function listenForHover(div) {
     div.addEventListener('mouseenter', () => div.style.backgroundColor = 'grey');
 }
 
+childDiv.forEach(listenForHover);
