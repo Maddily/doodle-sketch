@@ -36,3 +36,5 @@ childDiv.forEach(listenForHover);
 const button = document.createElement('button');
 
 document.body.insertBefore(button, container);
+
+button.textContent = 'Change Grid Size';
