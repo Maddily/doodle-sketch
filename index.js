@@ -11,9 +11,15 @@ for (let i = 1; i < 17; i++) {
 
 container.appendChild(mainFragment);
 
-//Add child divs into horizontal containers
+// Add child divs into horizontal containers
 for (let i = 1; i < 17; i++) {
     const div = document.createElement('div');
     div.classList.add('child-div');
     childFragment.appendChild(div);
 }
+
+function appendChildFragment(horizontalContainer) {
+    
+    
+}
+
