@@ -24,3 +24,5 @@ function appendChildFragment(horizontalContainer) {
 const horizontalContainers = document.querySelectorAll('.horizontal-container');
 
 horizontalContainers.forEach(appendChildFragment);
+
+const childDiv = document.querySelectorAll('.child-div');
