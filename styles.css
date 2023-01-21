@@ -11,6 +11,10 @@ body {
     align-items: center;
 }
 
+button {
+    padding: 0.5rem 1rem;
+}
+
 .horizontal-container {
     display: flex;
     flex-wrap: nowrap;
