@@ -18,5 +18,6 @@ function appendChildFragment(horizontalContainer) {
         div.classList.add('child-div');
         childFragment.appendChild(div);
     }
+    horizontalContainer.appendChild(childFragment);
 }
 
