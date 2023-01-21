@@ -22,3 +22,5 @@ function appendChildFragment(horizontalContainer) {
 }
 
 const horizontalContainers = document.querySelectorAll('.horizontal-container');
+
+horizontalContainers.forEach(appendChildFragment);
