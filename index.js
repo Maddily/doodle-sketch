@@ -26,3 +26,8 @@ const horizontalContainers = document.querySelectorAll('.horizontal-container');
 horizontalContainers.forEach(appendChildFragment);
 
 const childDiv = document.querySelectorAll('.child-div');
+
+function listenForHover(div) {
+    div.addEventListener('mouseenter', () => div.style.backgroundColor = 'grey');
+}
+
