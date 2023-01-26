@@ -25,6 +25,7 @@ button {
 .horizontal-container {
     display: flex;
     flex-wrap: nowrap;
+    flex: 1;
 }
 
 .child-div {
