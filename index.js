@@ -4,14 +4,24 @@ let horizontalContainers;
 let childDiv;
 let gridSize = 16;
 
-//Add horizontal containers into the main container
-for (let i = 1; i <= gridSize; i++) {
-    const div = document.createElement('div');
-    div.classList.add('horizontal-container');
-    mainFragment.appendChild(div);
+function fillGrid() {
+    //Add horizontal containers into the main container
+    for (let i = 1; i <= gridSize; i++) {
+        const div = document.createElement('div');
+        div.classList.add('horizontal-container');
+        mainFragment.appendChild(div);
+    }
+
+    container.appendChild(mainFragment);
+
+    horizontalContainers = document.querySelectorAll('.horizontal-container');
+    horizontalContainers.forEach(appendChildFragment);
+
+    childDiv = document.querySelectorAll('.child-div');
+    childDiv.forEach(listenForHover);
 }
 
-container.appendChild(mainFragment);
+fillGrid();
 
 // Add child divs into horizontal containers
 function appendChildFragment(horizontalContainer) {
@@ -24,17 +34,9 @@ function appendChildFragment(horizontalContainer) {
     horizontalContainer.appendChild(childFragment);
 }
 
-horizontalContainers = document.querySelectorAll('.horizontal-container');
-
-horizontalContainers.forEach(appendChildFragment);
-
-childDiv = document.querySelectorAll('.child-div');
-
 function listenForHover(div) {
     div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
 }
-
-childDiv.forEach(listenForHover);
 
 const button = document.createElement('button');
 
