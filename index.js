@@ -45,5 +45,18 @@ function changeGridSize() {
     if (newGridSize <= 100 && newGridSize >= 1) {
         gridSize = newGridSize;
         container.innerHTML = '';
+        for (let i = 1; i <= gridSize; i++) {
+            const div = document.createElement('div');
+            div.classList.add('horizontal-container');
+            mainFragment.appendChild(div);
+        }
+        
+        container.appendChild(mainFragment);
+
+        horizontalContainers = document.querySelectorAll('.horizontal-container');
+        horizontalContainers.forEach(appendChildFragment);
+
+        childDiv = document.querySelectorAll('.child-div');
+        childDiv.forEach(listenForHover);
     }
 }
