@@ -22,11 +22,11 @@ function appendChildFragment(horizontalContainer) {
     horizontalContainer.appendChild(childFragment);
 }
 
-const horizontalContainers = document.querySelectorAll('.horizontal-container');
+let horizontalContainers = document.querySelectorAll('.horizontal-container');
 
 horizontalContainers.forEach(appendChildFragment);
 
-const childDiv = document.querySelectorAll('.child-div');
+let childDiv = document.querySelectorAll('.child-div');
 
 function listenForHover(div) {
     div.addEventListener('mouseenter', () => div.style.backgroundColor = 'grey');
