@@ -1,5 +1,7 @@
 const container = document.querySelector('.container');
 const mainFragment = document.createDocumentFragment();
+let horizontalContainers;
+let childDiv;
 let gridSize = 16;
 
 //Add horizontal containers into the main container
@@ -22,11 +24,11 @@ function appendChildFragment(horizontalContainer) {
     horizontalContainer.appendChild(childFragment);
 }
 
-let horizontalContainers = document.querySelectorAll('.horizontal-container');
+horizontalContainers = document.querySelectorAll('.horizontal-container');
 
 horizontalContainers.forEach(appendChildFragment);
 
-let childDiv = document.querySelectorAll('.child-div');
+childDiv = document.querySelectorAll('.child-div');
 
 function listenForHover(div) {
     div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
