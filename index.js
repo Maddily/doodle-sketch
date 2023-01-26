@@ -40,3 +40,7 @@ document.body.insertBefore(button, container);
 
 button.textContent = 'Change Grid Size';
 
+function changeGridSize() {
+    const newGridSize = parseInt(prompt('How many squares per side?\n(Choose a number up to 100)', 0));
+    
+}
