@@ -59,4 +59,7 @@ function changeGridSize() {
         childDiv = document.querySelectorAll('.child-div');
         childDiv.forEach(listenForHover);
     }
+    else {
+        alert(`${newGridSize} is not between 1 and 100.`);
+    }
 }
