@@ -29,7 +29,7 @@ horizontalContainers.forEach(appendChildFragment);
 let childDiv = document.querySelectorAll('.child-div');
 
 function listenForHover(div) {
-    div.addEventListener('mouseenter', () => div.style.backgroundColor = 'grey');
+    div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
 }
 
 childDiv.forEach(listenForHover);
