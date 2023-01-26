@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const mainFragment = document.createDocumentFragment();
+let gridSize = 16;
 
 //Add horizontal containers into the main container
 for (let i = 1; i < 17; i++) {
@@ -39,11 +40,3 @@ document.body.insertBefore(button, container);
 
 button.textContent = 'Change Grid Size';
 
-// function changeGridSize() {
-//     const newGridSize = parseInt(prompt('How many squares per side?\n(Choose a number up to 100)', 0));
-//     if (newGridSize <= 100) {
-
-//     }
-// }
-
-// button.addEventListener('click', )
