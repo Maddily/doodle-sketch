@@ -15,6 +15,13 @@ button {
     padding: 0.5rem 1rem;
 }
 
+.container {
+    width: 48rem;
+    height: 48rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .horizontal-container {
     display: flex;
     flex-wrap: nowrap;
