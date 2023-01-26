@@ -63,3 +63,5 @@ function changeGridSize() {
         alert(`${newGridSize} is not between 1 and 100.`);
     }
 }
+
+button.addEventListener('click', changeGridSize);
