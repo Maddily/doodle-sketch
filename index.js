@@ -3,7 +3,7 @@ const mainFragment = document.createDocumentFragment();
 let gridSize = 16;
 
 //Add horizontal containers into the main container
-for (let i = 1; i < 17; i++) {
+for (let i = 1; i <= gridSize; i++) {
     const div = document.createElement('div');
     div.classList.add('horizontal-container');
     mainFragment.appendChild(div);
