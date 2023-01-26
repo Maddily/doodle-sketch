@@ -44,6 +44,6 @@ function changeGridSize() {
     const newGridSize = parseInt(prompt('How many squares per side?\n(Choose a number up to 100)', 0));
     if (newGridSize <= 100 && newGridSize >= 1) {
         gridSize = newGridSize;
-            
+        container.innerHTML = '';
     }
 }
