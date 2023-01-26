@@ -14,7 +14,7 @@ container.appendChild(mainFragment);
 // Add child divs into horizontal containers
 function appendChildFragment(horizontalContainer) {
     const childFragment = document.createDocumentFragment();
-    for (let i = 1; i < 17; i++) {
+    for (let i = 1; i <= gridSize; i++) {
         const div = document.createElement('div');
         div.classList.add('child-div');
         childFragment.appendChild(div);
