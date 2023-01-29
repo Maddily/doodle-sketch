@@ -23,7 +23,7 @@ body {
 }
 
 button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     width: fit-content;
     background-color: #ddd3c8;
     border: 1px solid #ddd3c8;
