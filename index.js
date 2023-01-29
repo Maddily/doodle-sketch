@@ -49,11 +49,11 @@ function listenForHover(div) {
     });
 }
 
-const button = document.createElement('button');
+const gridSizeButton = document.createElement('button');
 
-document.body.insertBefore(button, container);
+document.body.insertBefore(gridSizeButton, container);
 
-button.textContent = 'Change Grid Size';
+gridSizeButton.textContent = 'Change Grid Size';
 
 function changeGridSize() {
     const newGridSize = parseInt(prompt('How many squares per side?\n(Choose a number between 1 and 100)', 0));
@@ -67,4 +67,4 @@ function changeGridSize() {
     }
 }
 
-button.addEventListener('click', changeGridSize);
+gridSizeButton.addEventListener('click', changeGridSize);
