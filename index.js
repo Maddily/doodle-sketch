@@ -34,6 +34,11 @@ function appendChildFragment(horizontalContainer) {
     horizontalContainer.appendChild(childFragment);
 }
 
+// Return a random number between two numbers;
+function randomrgb(min, max) {
+    return min + Math.floor(Math.random() * (max - min + 1));
+}
+
 function listenForHover(div) {
     div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
 }
