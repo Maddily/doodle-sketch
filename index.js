@@ -54,12 +54,15 @@ buttonsDiv.classList.add('buttons');
 
 const gridSizeButton = document.createElement('button');
 gridSizeButton.classList.add('size-button');
-document.body.insertBefore(gridSizeButton, container);
 gridSizeButton.textContent = 'Change Grid Size';
 
 const resetButton = document.createElement('button');
 resetButton.classList.add('reset');
 resetButton.textContent = 'RESET';
+
+buttonsDiv.appendChild(gridSizeButton);
+buttonsDiv.appendChild(resetButton);
+document.body.insertBefore(buttonsDiv, container);
 
 function changeGridSize() {
     const newGridSize = parseInt(prompt('How many squares per side?\n(Choose a number between 1 and 100)', 0));
