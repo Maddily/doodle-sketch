@@ -49,6 +49,9 @@ function listenForHover(div) {
     });
 }
 
+const buttonsDiv = document.createElement('div');
+buttonsDiv.classList.add('buttons');
+
 const gridSizeButton = document.createElement('button');
 gridSizeButton.classList.add('size-button');
 document.body.insertBefore(gridSizeButton, container);
