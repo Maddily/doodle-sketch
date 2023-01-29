@@ -41,6 +41,7 @@ button {
 .child-div {
     border: 1px solid grey;
     flex: 1;
+    background-color: #ddd3c8;
 }
 
 @media only screen and (max-width: 775px) {
