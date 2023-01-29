@@ -39,7 +39,7 @@ button {
 }
 
 .child-div {
-    border: 1px solid grey;
+    border: 1px solid #2b2d47;
     flex: 1;
     background-color: #ddd3c8;
 }
