@@ -40,7 +40,13 @@ function randomrgb(min, max) {
 }
 
 function listenForHover(div) {
-    div.addEventListener('mouseenter', () => div.style.backgroundColor = 'black');
+    div.addEventListener('mouseenter', () => {
+        const r = randomrgb(0, 255);
+        const g = randomrgb(0, 255);
+        const b = randomrgb(0, 255);
+        const randomColor = `rgb(${r}, ${g}, ${b})`;    
+        div.style.backgroundColor = randomColor;
+    });
 }
 
 const button = document.createElement('button');
