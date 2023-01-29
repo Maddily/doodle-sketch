@@ -29,6 +29,8 @@ button {
     border: 1px solid #ddd3c8;
     color: #2b2d47;
     font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Solitreo', sans-serif;
 }
 
 .container {
