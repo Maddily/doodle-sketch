@@ -26,6 +26,7 @@ button {
     background-color: #ddd3c8;
     border: 1px solid #ddd3c8;
     color: #2b2d47;
+    font-weight: bold;
 }
 
 .container {
