@@ -51,6 +51,8 @@ function listenForHover(div) {
 
 const gridSizeButton = document.createElement('button');
 
+gridSizeButton.classList.add('size-button');
+
 document.body.insertBefore(gridSizeButton, container);
 
 gridSizeButton.textContent = 'Change Grid Size';
