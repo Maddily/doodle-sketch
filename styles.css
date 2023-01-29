@@ -24,6 +24,7 @@ button {
     padding: 0.5rem 1rem;
     width: fit-content;
     background-color: #ddd3c8;
+    border: 1px solid #ddd3c8;
 }
 
 .container {
