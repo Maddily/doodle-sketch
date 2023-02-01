@@ -43,8 +43,8 @@ button {
 }
 
 .container {
-    width: 48rem;
-    height: 48rem;
+    width: 35rem;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 5px 5px white;
