@@ -12,6 +12,10 @@ body {
     background-color: #2b2d47;
 }
 
+h1 {
+    font-family: 'Solitreo', sans-serif;
+}
+
 .middle {
     width: 100%;
     display: flex;
