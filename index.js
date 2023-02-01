@@ -10,6 +10,10 @@ footer.classList.add('credit');
 const span = document.createElement('span');
 span.textContent = 'Created by: Maddily';
 
+const githubIcon = document.createElement('img');
+githubIcon.setAttribute('src', './images/github-mark-white.svg');
+githubIcon.setAttribute('alt', 'github icon');
+
 const container = document.querySelector('.container');
 const mainFragment = document.createDocumentFragment();
 let horizontalContainers;
