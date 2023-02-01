@@ -72,6 +72,7 @@ button {
 
 .credit {
     font-family: 'Solitreo', sans-serif;
+    font-size: 1.1rem;
     color: white;
     width: 40%;
     display: flex;
