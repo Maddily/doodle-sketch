@@ -71,7 +71,7 @@ middle.appendChild(container);
 document.body.appendChild(title);
 document.body.appendChild(middle);
 
-resetButton.addEventListener('click', () => childDiv.forEach((div) => div.style.backgroundColor = '#ddd3c8'));
+resetButton.addEventListener('click', () => childDiv.forEach((div) => div.style.backgroundColor = 'white'));
 
 function changeGridSize() {
     const newGridSize = parseInt(prompt('How many squares per side?\n(Choose a number between 1 and 100)', 0));
