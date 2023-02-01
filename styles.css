@@ -50,7 +50,7 @@ button {
 .child-div {
     border: 1px solid #f3f3f3;
     flex: 1;
-    background-color: #ddd3c8;
+    background-color: white;
 }
 
 @media only screen and (max-width: 1360px) {
