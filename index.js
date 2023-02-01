@@ -1,3 +1,5 @@
+const title = document.createElement('h1');
+title.textContent = 'Doodle-Sketch';
 const container = document.querySelector('.container');
 const mainFragment = document.createDocumentFragment();
 let horizontalContainers;
