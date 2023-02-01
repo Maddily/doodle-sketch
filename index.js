@@ -62,7 +62,7 @@ gridSizeButton.textContent = 'Resize';
 
 const resetButton = document.createElement('button');
 resetButton.classList.add('reset');
-resetButton.textContent = 'Reset';
+resetButton.textContent = 'Clear';
 
 buttonsDiv.appendChild(gridSizeButton);
 buttonsDiv.appendChild(resetButton);
