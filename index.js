@@ -1,9 +1,15 @@
 const title = document.createElement('h1');
 title.textContent = 'Doodle-Sketch';
+
 const middle = document.createElement('div');
 middle.classList.add('middle');
+
 const footer = document.createElement('div');
 footer.classList.add('credit');
+
+const span = document.createElement('span');
+span.textContent = 'Created by: Maddily';
+
 const container = document.querySelector('.container');
 const mainFragment = document.createDocumentFragment();
 let horizontalContainers;
