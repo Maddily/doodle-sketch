@@ -14,6 +14,9 @@ const githubIcon = document.createElement('img');
 githubIcon.setAttribute('src', './images/github-mark-white.svg');
 githubIcon.setAttribute('alt', 'github icon');
 
+footer.appendChild(span);
+footer.appendChild(githubIcon);
+
 const container = document.querySelector('.container');
 const mainFragment = document.createDocumentFragment();
 let horizontalContainers;
