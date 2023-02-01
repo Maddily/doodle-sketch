@@ -28,7 +28,7 @@ h1 {
 }
 
 .buttons {
-    width: 30%;
+    width: fit-content;
     height: 60%;
     display: flex;
     flex-direction: column;
