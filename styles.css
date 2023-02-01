@@ -74,6 +74,10 @@ button {
     font-family: 'Solitreo', sans-serif;
     color: white;
     width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
 span {
