@@ -85,6 +85,7 @@ middle.appendChild(buttonsDiv);
 middle.appendChild(container);
 document.body.appendChild(title);
 document.body.appendChild(middle);
+document.body.appendChild(footer);
 
 resetButton.addEventListener('click', () => childDiv.forEach((div) => div.style.backgroundColor = 'white'));
 
