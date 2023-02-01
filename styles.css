@@ -12,7 +12,10 @@ body {
     background-color: #2b2d47;
 }
 
-
+.middle {
+    width: 100%;
+    
+}
 
 .buttons {
     width: 15%;
