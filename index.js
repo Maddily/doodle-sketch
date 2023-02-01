@@ -66,7 +66,9 @@ resetButton.textContent = 'Reset';
 
 buttonsDiv.appendChild(gridSizeButton);
 buttonsDiv.appendChild(resetButton);
-document.body.insertBefore(buttonsDiv, container);
+// document.body.insertBefore(buttonsDiv, container);
+middle.appendChild(buttonsDiv);
+middle.appendChild(container);
 
 resetButton.addEventListener('click', () => childDiv.forEach((div) => div.style.backgroundColor = '#ddd3c8'));
 
