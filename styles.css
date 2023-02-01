@@ -39,6 +39,7 @@ button {
     height: 48rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 2px 5px 5px white;
 }
 
 .horizontal-container {
