@@ -81,8 +81,10 @@ resetButton.textContent = 'Clear';
 
 buttonsDiv.appendChild(gridSizeButton);
 buttonsDiv.appendChild(resetButton);
+
 middle.appendChild(buttonsDiv);
 middle.appendChild(container);
+
 document.body.appendChild(title);
 document.body.appendChild(middle);
 document.body.appendChild(footer);
