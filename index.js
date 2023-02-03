@@ -23,25 +23,6 @@ let horizontalContainers;
 let childDiv;
 let gridSize = 16;
 
-function fillGrid() {
-    //Add horizontal containers into the main container
-    for (let i = 1; i <= gridSize; i++) {
-        const div = document.createElement('div');
-        div.classList.add('horizontal-container');
-        mainFragment.appendChild(div);
-    }
-
-    container.appendChild(mainFragment);
-
-    horizontalContainers = document.querySelectorAll('.horizontal-container');
-    horizontalContainers.forEach(appendChildFragment);
-
-    childDiv = document.querySelectorAll('.child-div');
-    childDiv.forEach(listenForHover);
-}
-
-fillGrid();
-
 // Add child divs into horizontal containers
 function appendChildFragment(horizontalContainer) {
     const childFragment = document.createDocumentFragment();
@@ -67,6 +48,25 @@ function listenForHover(div) {
         div.style.backgroundColor = randomColor;
     });
 }
+
+function fillGrid() {
+    //Add horizontal containers into the main container
+    for (let i = 1; i <= gridSize; i++) {
+        const div = document.createElement('div');
+        div.classList.add('horizontal-container');
+        mainFragment.appendChild(div);
+    }
+
+    container.appendChild(mainFragment);
+
+    horizontalContainers = document.querySelectorAll('.horizontal-container');
+    horizontalContainers.forEach(appendChildFragment);
+
+    childDiv = document.querySelectorAll('.child-div');
+    childDiv.forEach(listenForHover);
+}
+
+fillGrid();
 
 const buttonsDiv = document.createElement('div');
 buttonsDiv.classList.add('buttons');
